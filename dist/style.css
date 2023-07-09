@@ -1,0 +1,100 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica;
+  font-size: 24px;
+}
+
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 50px;
+}
+
+canvas {
+  margin: 10px;
+  border: 2px gray solid;
+  
+}
+img {position: absolute;
+    top: 720px; left: 1000px;
+  
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+div.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  background: #FFDF37;
+  margin: 100px auto;
+  position: relative;
+  height: 800px;
+  width: 800px;
+}
+
+.robot-head {
+  background: #fff;
+  border-radius: 120px;
+  border: 10px solid #000;
+  box-sizing: border-box;
+  position: absolute;
+    top: 700px; left: 550px;
+  width: 400px;
+  height: 320px;
+}
+
+
+.robot-face {
+  box-sizing: border-box;
+  background: #94D3F7;
+  border-radius: 60px;
+  border: 8px solid #000;
+  position: absolute;
+    top: 50px; left: 50px;
+  width: 280px;
+  height: 200px;
+}
+.robot-eye-left,
+.robot-eye-right {
+  background: #000;
+  border-radius: 100px;
+  position: absolute;
+    top: 50px;
+  width: 40px;
+  animation: blink 4s infinite ease-in-out;
+}
+.robot-eye-left {
+  left: 56px;
+}
+.robot-eye-right {
+  right: 56px;
+}
+@keyframes blink {
+  0%, 12%, 100% {
+    height: 40px;
+    top: 50px;
+  }
+ 5%, 7% {
+    height: 7px;
+    top: 71px;
+  }
+}
+.robot-mouth {
+  width: 80px;
+  position: absolute;
+  left: 92px; top: 30px;
+}
